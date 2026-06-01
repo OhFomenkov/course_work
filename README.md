@@ -29,7 +29,7 @@ python -m venv venv
 venv\Scripts\activate  # Для Windows
 
 # Установка зависимостей
-pip install -r requirements.txt
+pip install -r requirements.txt 
 2. Конфигурация
 Создайте файл .env в корне проекта на основе .env.example и укажите необходимые данные:
 Данные для подключения к PostgreSQL (DB_NAME, DB_USER, DB_PASSWORD, и т.д.)
