@@ -31,7 +31,7 @@ venv\Scripts\activate  # Для Windows
 # Установка зависимостей
 pip install -r requirements.txt
 ```
-2. Конфигурация
+### 2. Конфигурация
 ```bash
 Создайте файл .env в корне проекта на основе .env.example и укажите необходимые данные:
 Данные для подключения к PostgreSQL (DB_NAME, DB_USER, DB_PASSWORD, и т.д.)
@@ -40,7 +40,7 @@ Telegram API Credentials (BOT_TOKEN)
 Для генерации секретного ключа используйте:
 python -c "import secrets; print(secrets.token_hex(32))"
 ```
-3. Инициализация базы данных
+### 3. Инициализация базы данных
 ```bash
 # Создание таблиц
 python -m app.database.db_init
@@ -48,7 +48,7 @@ python -m app.database.db_init
 # Наполнение демо-данными для проверки
 python scripts/db_seed.py
 ```
-4. Запуск
+### 4. Запуск
 ```bash
 # Запуск веб-интерфейса
 python -m app.web.app
